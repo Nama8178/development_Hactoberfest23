@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Temp</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
+   <style>
+     
+    .con{
+        align-self: center;
+        justify-content: center;
+        margin: 30px 180px;
+        margin-top: 12%;
+    }
+    .container{
+      border: 0.2px solid black;
+      padding: 15px 25px 15px 25px;
+      border-radius: 3px;
+     box-shadow: 5px 5px rgba(0, 0, 0, 0.11);
+    }
+    .container:hover{
+        box-shadow: 5px 5px rgba(0, 0, 0, 0.164);
+    }
+    .btn{
+       margin-top: 12px;
+       margin-bottom: 12px;
+    }
+    #log{
+        border-radius: 5px;
+        margin-right: 10px;
+    }
+   </style>
+</head>
+<body>
+    <nav class="navbar fixed-top bg-body-tertiary">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#"><img src="https://images.vexels.com/media/users/3/141334/isolated/preview/8ebf3c1ca1f27e55731bbcfcf209a3ea-thermometer-icon.png" alt="Logo" width="30" height="24" class="d-inline-block align-text-top" id="log">Temperature Converter</a>
+        </div>
+      </nav>
+    <div class="con mt-6">
+    <div class="container">
+    <label>Enter a temprature:</label><br>
+    <input type="text" id="text_input"><br>
+     
+    <label>Convert to:</label><br>
+    <input type="radio" id="cbtn" name="unit">
+    <label>Celcius</label><br>
+    <input type="radio" id="fbtn" name="unit">
+    <label>Farehanite</label><br>
+    <button id="submit_btn" class="btn btn-success">Submit</button><br>
+     <label id="tempLabel"></label>
+    </div>
+</div>
+   <script src="temp.js"></script>
+   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+</body>
+</html>
